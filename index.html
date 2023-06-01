@@ -11,24 +11,15 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #1F2126;
-      color: #FFFFFF;
+      padding: 20px;
+      background-color: #121212;
+      color: #CCCCCC;
     }
 
     .header {
-      background-color: #6FE339;
-      color: #FFFFFF;
-      padding: 20px;
       text-align: center;
-      border-radius: 10px 10px 0 0;
-    }
-
-    .header h1 {
-      font-size: 32px;
-      margin: 0;
     }
 
     .logo {
@@ -38,36 +29,39 @@
     }
 
     .product-description {
-      background-color: #31353D;
+      background-color: #1E1E1E;
       padding: 20px;
-      border-radius: 10px;
+      border-radius: 40px;
       margin-bottom: 20px;
+      text-align: justify;
     }
 
-    .product-description p {
-      margin: 0;
-      line-height: 1.5;
+    .buy-button {
+      background-color: #FF3364;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 20px;
     }
 
     .specs {
-      background-color: #2B2D34;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-
-    .specs h2 {
-      margin-top: 0;
+      margin-top: 20px;
     }
 
     .specs table {
       width: 100%;
+      border-collapse: collapse;
     }
 
     .specs table th,
     .specs table td {
       padding: 10px;
-      border: 1px solid #4B4E57;
+      border: 1px solid #CCCCCC;
     }
 
     .specs table th {
@@ -75,13 +69,17 @@
       color: #FFFFFF;
     }
 
-    @media screen and (max-width: 600px) {
-      .header h1 {
-        font-size: 24px;
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
       }
 
       .logo {
         font-size: 36px;
+      }
+
+      .product-description {
+        border-radius: 20px;
       }
     }
   </style>
@@ -93,11 +91,9 @@
   </div>
 
   <div class="product-description">
-    <p>Willkommen bei DuckBerry, dem vielseitigen Rubberducky auf Basis des Raspberry Pi Pico. Mit DuckBerry kannst du unzählige Skripte ausführen und die Möglichkeiten deiner Projekte erweitern. Ob Hacking, Automatisierung oder Prototyping – DuckBerry ist dein zuverlässiger Begleiter.</p>
-  </div>
-
-  <div class="specs">
-    <h2>Spezifikationen des Raspberry Pi Pico:</h2>
+    <p>Ich bin der Entwickler von DuckBerry, einem vielseitigen Rubberducky, der unzählige Skripte unterstützt. DuckBerry ist aus einem Raspberry Pi Pico hergestellt und bietet umfangreiche Möglichkeiten für Programmierung und Hacking-Projekte. Das Gerät ist ideal für Anfänger und erfahrene Benutzer gleichermaßen.</p>
+    <p>DuckBerry bietet eine einfache und benutzerfreundliche Schnittstelle, um verschiedene Skripte und Befehle auszuführen und Aktionen auf Zielgeräten durchzuführen. Mit seinem kompakten Design und der Leistungsfähigkeit des Raspberry Pi Pico ist DuckBerry eine großartige Wahl für kreative Projekte und experimentelles Lernen.</p>
+    <p>Hier sind die Spezifikationen des Raspberry Pi Pico:</p>
     <table>
       <tr>
         <th>Prozessor</th>
@@ -121,6 +117,15 @@
       </tr>
     </table>
   </div>
+
+  <button class="buy-button">Jetzt kaufen</button>
+
+  <script>
+    const button = document.querySelector('.buy-button');
+    button.addEventListener('click', () => {
+      alert('Vielen Dank für Ihren Kauf!');
+    });
+  </script>
 </body>
 
 </html>
