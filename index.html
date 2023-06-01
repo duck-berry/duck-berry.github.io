@@ -14,7 +14,7 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #303030;
+      background-color: #1F2126;
       color: #FFFFFF;
     }
 
@@ -34,18 +34,30 @@
     .logo {
       font-size: 48px;
       font-weight: bold;
-      color: #FF3364;
+      color: #6FE339;
     }
 
     .product-description {
-      background-color: #FFFFFF;
+      background-color: #31353D;
       padding: 20px;
-      border-radius: 0 0 10px 10px;
+      border-radius: 10px;
       margin-bottom: 20px;
     }
 
+    .product-description p {
+      margin: 0;
+      line-height: 1.5;
+    }
+
     .specs {
-      margin-top: 20px;
+      background-color: #2B2D34;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .specs h2 {
+      margin-top: 0;
     }
 
     .specs table {
@@ -55,7 +67,7 @@
     .specs table th,
     .specs table td {
       padding: 10px;
-      border: 1px solid #CCCCCC;
+      border: 1px solid #4B4E57;
     }
 
     .specs table th {
@@ -63,28 +75,14 @@
       color: #FFFFFF;
     }
 
-    .features {
-      padding: 20px;
-      background-color: #4C4C4C;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
+    @media screen and (max-width: 600px) {
+      .header h1 {
+        font-size: 24px;
+      }
 
-    .features h2 {
-      color: #6FE339;
-      margin-top: 0;
-    }
-
-    .features p {
-      color: #FFFFFF;
-    }
-
-    .footer {
-      background-color: #6FE339;
-      color: #FFFFFF;
-      padding: 20px;
-      text-align: center;
-      border-radius: 0 0 10px 10px;
+      .logo {
+        font-size: 36px;
+      }
     }
   </style>
 </head>
@@ -95,7 +93,7 @@
   </div>
 
   <div class="product-description">
-    <p>DuckBerry ist der ultimative Rubberducky, der unzählige Skripte unterstützt. Er wurde mit einem Raspberry Pi Pico entwickelt und bietet Ihnen grenzenlose Möglichkeiten.</p>
+    <p>Willkommen bei DuckBerry, dem vielseitigen Rubberducky auf Basis des Raspberry Pi Pico. Mit DuckBerry kannst du unzählige Skripte ausführen und die Möglichkeiten deiner Projekte erweitern. Ob Hacking, Automatisierung oder Prototyping – DuckBerry ist dein zuverlässiger Begleiter.</p>
   </div>
 
   <div class="specs">
@@ -123,25 +121,6 @@
       </tr>
     </table>
   </div>
-
-  <div class="features">
-    <h2>Erweiterte Funktionen von DuckBerry:</h2>
-    <ul>
-      <li>Kompatibel mit verschiedenen Betriebssystemen</li>
-      <li>Einfache und benutzerfreundliche Programmierung</li>
-      <li>Unterstützt eine breite Palette von Skripten und Anwendungen</li>
-      <li>Ermöglicht schnelle und effiziente Automatisierungsaufgaben</li>
-      <li>Kompakte Größe und geringer Stromverbrauch</li>
-    </ul>
-  </div>
-
-  <div class="footer">
-    <p>DuckBerry - Einzelkämpferprojekt von Max Mustermann</p>
-  </div>
-
-  <script>
-    // JavaScript code can be added here if necessary.
-  </script>
 </body>
 
 </html>
